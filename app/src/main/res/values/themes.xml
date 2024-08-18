@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.INDE" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">#FFF5EA</item>
+    </style>
+
+    <style name="Theme.INDE" parent="Base.Theme.INDE" />
+
+    <style name="Theme.INDE.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.INDE.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.INDE.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
