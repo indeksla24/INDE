@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "509150109748",
+    "project_id": "inde-ksla24",
+    "storage_bucket": "inde-ksla24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509150109748:android:c3d5e34daf5f8dda0aaa61",
+        "android_client_info": {
+          "package_name": "com.inde"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPLsH866BA3fzbl0pAiytGosfs_prYH1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

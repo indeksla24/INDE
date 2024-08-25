@@ -18,6 +18,7 @@ public class Room_Type_Selection extends AppCompatActivity {
     public Button bathroom_button;
     public Button kitchen_button;
     public Button dining_button;
+    public Button item_selection;
 
     @SuppressLint({"MissingInflatedId", "WrongViewCast"})
     @Override
@@ -67,6 +68,16 @@ public class Room_Type_Selection extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Room_Type_Selection.this, Dining_Selection.class);
+                startActivity(intent);
+            }
+        });
+
+//        ITEM SELECTION BUTTON
+        item_selection = findViewById(R.id.item_selection);
+        item_selection.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Room_Type_Selection.this, item_list.class);
                 startActivity(intent);
             }
         });

@@ -1,0 +1,13 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+        <item>
+            <shape>
+                <corners android:radius="16dp"/>
+                <solid android:color="@android:color/transparent"/> <!-- Transparent background -->
+            </shape>
+        </item>
+        <item
+            android:drawable="@drawable/safa1"
+            android:scaleType="fitXY"
+            />
+    </layer-list>
+
