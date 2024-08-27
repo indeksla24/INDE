@@ -7,272 +7,214 @@
     android:layout_height="match_parent"
     tools:context=".LED_TV_AR_view"
     android:background="@color/theme">
-
-
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="-143dp"
         tools:layout_editor_absoluteY="0dp"
         android:orientation="horizontal">
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:padding="30dp">
-
-            <GridLayout
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:columnCount="1"
-                android:layout_gravity="center"
-                >
-                <LinearLayout
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:layout_gravity="center">
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:background="@drawable/led1"
-                        />
-                    <Button
-                        android:id="@+id/led1_button"
-                        android:text="VIEW"
-                        android:textSize="12dp"
-                        android:textColor="@color/btn_text_color"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="25dp"
-                        android:gravity="center"
-                        android:background="@drawable/border_big_button"
-                        android:onClick="buttonARView"
-                        />
-                </LinearLayout>
+                android:layout_height="match_parent">
 
                 <LinearLayout
-                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    android:layout_gravity="center">
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:background="@drawable/led1"
-                        />
-                    <Button
-                        android:id="@+id/led2_button"
-                        android:text="VIEW"
-                        android:textSize="12dp"
-                        android:textColor="@color/btn_text_color"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="30dp">
+
+                    <GridLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="25dp"
-                        android:gravity="center"
-                        android:background="@drawable/border_big_button"
-                        android:onClick="buttonARView"
-                        />
+                        android:layout_height="match_parent"
+                        android:columnCount="1"
+                        android:layout_gravity="center"
+                        >
+                        <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="150dp"
+                                android:background="@drawable/tv1"
+                                />
+                            <Button
+                                android:id="@+id/tv1_button"
+                                android:text="VIEW"
+                                android:textSize="12dp"
+                                android:textColor="@color/btn_text_color"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:gravity="center"
+                                android:background="@drawable/border_big_button"
+                                android:onClick="tv1_buttonARView"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:background="@drawable/tv2"
+                                />
+                            <Button
+                                android:id="@+id/tv2_button"
+                                android:text="VIEW"
+                                android:textSize="12dp"
+                                android:textColor="@color/btn_text_color"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:gravity="center"
+                                android:background="@drawable/border_big_button"
+                                android:onClick="tv2_buttonARView"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:background="@drawable/tv3"
+                                />
+                            <Button
+                                android:id="@+id/tv3_button"
+                                android:text="VIEW"
+                                android:textSize="12dp"
+                                android:textColor="@color/btn_text_color"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:gravity="center"
+                                android:background="@drawable/border_big_button"
+                                android:onClick="tv3_buttonARView"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:background="@drawable/tv4"
+                                />
+                            <Button
+                                android:id="@+id/tv4_button"
+                                android:text="VIEW"
+                                android:textSize="12dp"
+                                android:textColor="@color/btn_text_color"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:gravity="center"
+                                android:background="@drawable/border_big_button"
+                                android:onClick="tv4_buttonARView"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:background="@drawable/tv5"
+                                />
+                            <Button
+                                android:id="@+id/tv5_button"
+                                android:text="VIEW"
+                                android:textSize="12dp"
+                                android:textColor="@color/btn_text_color"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:gravity="center"
+                                android:background="@drawable/border_big_button"
+                                android:onClick="tv5_buttonARView"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:background="@drawable/tv6"
+                                />
+                            <Button
+                                android:id="@+id/tv6_button"
+                                android:text="VIEW"
+                                android:textSize="12dp"
+                                android:textColor="@color/btn_text_color"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:gravity="center"
+                                android:background="@drawable/border_big_button"
+                                android:onClick="tv6_buttonARView"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:background="@drawable/tv7"
+                                />
+                            <Button
+                                android:id="@+id/led7_button"
+                                android:text="VIEW"
+                                android:textSize="12dp"
+                                android:textColor="@color/btn_text_color"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:gravity="center"
+                                android:background="@drawable/border_big_button"
+                                android:onClick="tv7_buttonARView"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:background="@drawable/tv8"
+                                />
+                            <Button
+                                android:id="@+id/tv8_button"
+                                android:text="VIEW"
+                                android:textSize="12dp"
+                                android:textColor="@color/btn_text_color"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:gravity="center"
+                                android:background="@drawable/border_big_button"
+                                android:onClick="tv8_buttonARView"
+                                />
+                        </LinearLayout>
+
+                    </GridLayout>
                 </LinearLayout>
-                <LinearLayout
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:layout_gravity="center">
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:background="@drawable/led1"
-                        />
-                    <Button
-                        android:id="@+id/led3_button"
-                        android:text="VIEW"
-                        android:textSize="12dp"
-                        android:textColor="@color/btn_text_color"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="25dp"
-                        android:gravity="center"
-                        android:background="@drawable/border_big_button"
-                        android:onClick="buttonARView"
-                        />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:layout_gravity="center">
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:background="@drawable/led1"
-                        />
-                    <Button
-                        android:id="@+id/led4_button"
-                        android:text="VIEW"
-                        android:textSize="12dp"
-                        android:textColor="@color/btn_text_color"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="25dp"
-                        android:gravity="center"
-                        android:background="@drawable/border_big_button"
-                        android:onClick="buttonARView"
-                        />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:layout_gravity="center">
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:background="@drawable/led1"
-                        />
-                    <Button
-                        android:id="@+id/led5_button"
-                        android:text="VIEW"
-                        android:textSize="12dp"
-                        android:textColor="@color/btn_text_color"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="25dp"
-                        android:gravity="center"
-                        android:background="@drawable/border_big_button"
-                        android:onClick="buttonARView"
-                        />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:layout_gravity="center">
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:background="@drawable/led1"
-                        />
-                    <Button
-                        android:id="@+id/led6_button"
-                        android:text="VIEW"
-                        android:textSize="12dp"
-                        android:textColor="@color/btn_text_color"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="25dp"
-                        android:gravity="center"
-                        android:background="@drawable/border_big_button"
-                        android:onClick="buttonARView"
-                        />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:layout_gravity="center">
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:background="@drawable/led1"
-                        />
-                    <Button
-                        android:id="@+id/led7_button"
-                        android:text="VIEW"
-                        android:textSize="12dp"
-                        android:textColor="@color/btn_text_color"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="25dp"
-                        android:gravity="center"
-                        android:background="@drawable/border_big_button"
-                        android:onClick="buttonARView"
-                        />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:layout_gravity="center">
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:background="@drawable/led1"
-                        />
-                    <Button
-                        android:id="@+id/led8_button"
-                        android:text="VIEW"
-                        android:textSize="12dp"
-                        android:textColor="@color/btn_text_color"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="25dp"
-                        android:gravity="center"
-                        android:background="@drawable/border_big_button"
-                        android:onClick="buttonARView"
-                        />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:layout_gravity="center">
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:background="@drawable/led1"
-                        />
-                    <Button
-                        android:id="@+id/led9_button"
-                        android:text="VIEW"
-                        android:textSize="12dp"
-                        android:textColor="@color/btn_text_color"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="25dp"
-                        android:gravity="center"
-                        android:background="@drawable/border_big_button"
-                        android:onClick="buttonARView"
-                        />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:layout_gravity="center">
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:background="@drawable/led1"
-                        />
-                    <Button
-                        android:id="@+id/led10_button"
-                        android:text="VIEW"
-                        android:textSize="12dp"
-                        android:textColor="@color/btn_text_color"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="25dp"
-                        android:gravity="center"
-                        android:background="@drawable/border_big_button"
-                        android:onClick="buttonARView"
-                        />
-                </LinearLayout>
-
-            </GridLayout>
-
-        </LinearLayout>
-    </ScrollView>
-
-    </androidx.cardview.widget.CardView>
-
-
-
-
-
-
-
-
+            </ScrollView>
+        </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

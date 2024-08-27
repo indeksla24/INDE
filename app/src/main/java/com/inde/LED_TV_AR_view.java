@@ -25,20 +25,58 @@ public class LED_TV_AR_view extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-//        led1_button = findViewById(R.id.led1_button);
-//        led1_button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(LED_TV_AR_view.this, AR_view.class);
-//                startActivity(intent);
-//            }
-//        });
     }
-    public void buttonARView(View view) {
+
+//    AR INTEGRATION WITH BUTTONS
+
+    public void tv1_buttonARView(View view) {
         Intent sceneViewerIntent = new Intent(Intent.ACTION_VIEW);
-        sceneViewerIntent.setData(Uri.parse("https://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/indeksla24/inde_3d_models/main/led_tv_free.gltf"));
+        sceneViewerIntent.setData(Uri.parse("https://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/indeksla24/inde_3d_models/main/TV%201.gltf"));
         sceneViewerIntent.setPackage("com.google.android.googlequicksearchbox");
         startActivity(sceneViewerIntent);
     }
+    public void tv2_buttonARView(View view) {
+        Intent sceneViewerIntent = new Intent(Intent.ACTION_VIEW);
+        sceneViewerIntent.setData(Uri.parse("https://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/indeksla24/inde_3d_models/main/TV%202.gltf"));
+        sceneViewerIntent.setPackage("com.google.android.googlequicksearchbox");
+        startActivity(sceneViewerIntent);
+    }
+    public void tv3_buttonARView(View view) {
+        Intent sceneViewerIntent = new Intent(Intent.ACTION_VIEW);
+        sceneViewerIntent.setData(Uri.parse("https://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/indeksla24/inde_3d_models/main/TV%203.gltf"));
+        sceneViewerIntent.setPackage("com.google.android.googlequicksearchbox");
+        startActivity(sceneViewerIntent);
+    }
+    public void tv4_buttonARView(View view) {
+        Intent sceneViewerIntent = new Intent(Intent.ACTION_VIEW);
+        sceneViewerIntent.setData(Uri.parse("https://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/indeksla24/inde_3d_models/main/TV%204.gltf"));
+        sceneViewerIntent.setPackage("com.google.android.googlequicksearchbox");
+        startActivity(sceneViewerIntent);
+    }
+    public void tv5_buttonARView(View view) {
+        Intent sceneViewerIntent = new Intent(Intent.ACTION_VIEW);
+        sceneViewerIntent.setData(Uri.parse("https://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/indeksla24/inde_3d_models/main/TV%205.gltf"));
+        sceneViewerIntent.setPackage("com.google.android.googlequicksearchbox");
+        startActivity(sceneViewerIntent);
+    }
+    public void tv6_buttonARView(View view) {
+        Intent sceneViewerIntent = new Intent(Intent.ACTION_VIEW);
+        sceneViewerIntent.setData(Uri.parse("https://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/indeksla24/inde_3d_models/main/SOFA1.gltf"));
+        sceneViewerIntent.setPackage("com.google.android.googlequicksearchbox");
+        startActivity(sceneViewerIntent);
+    }
+    public void tv7_buttonARView(View view) {
+        Intent sceneViewerIntent = new Intent(Intent.ACTION_VIEW);
+        sceneViewerIntent.setData(Uri.parse("https://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/indeksla24/inde_3d_models/main/SOFA1.gltf"));
+        sceneViewerIntent.setPackage("com.google.android.googlequicksearchbox");
+        startActivity(sceneViewerIntent);
+    }
+    public void tv8_buttonARView(View view) {
+        Intent sceneViewerIntent = new Intent(Intent.ACTION_VIEW);
+        sceneViewerIntent.setData(Uri.parse("https://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/indeksla24/inde_3d_models/main/SOFA1.gltf"));
+        sceneViewerIntent.setPackage("com.google.android.googlequicksearchbox");
+        startActivity(sceneViewerIntent);
+    }
+
+
 }

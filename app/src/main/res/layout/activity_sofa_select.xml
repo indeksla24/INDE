@@ -7,71 +7,216 @@
     android:layout_height="match_parent"
     tools:context=".sofa_select"
     android:background="@color/theme">
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:cardCornerRadius="0dp"
-        app:cardElevation="0dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-
-        <LinearLayout
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="30dp">
-
-            <TextView
-                android:id="@+id/room_type_selection_heroline_head"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Select Element for viewing in AR view "
-                android:textSize="30sp"
-                android:textStyle="bold" />
+            tools:layout_editor_absoluteX="-143dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:orientation="horizontal">
 
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:scrollbars="none">
+                android:layout_height="match_parent">
 
-                <GridLayout
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:rowCount="5"
-                    android:columnCount="2"
-                    android:orientation="horizontal">
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="30dp">
 
-                    <Button
-                        android:id="@+id/sofa1_AR_button"
-                        android:layout_width="150dp"
-                        android:layout_height="200dp"
-                        android:layout_marginTop="25dp"
-                        android:layout_marginEnd="25dp"
-                        android:background="@drawable/sofa1_file"
-                        android:drawableTop="@drawable/sofa1_file"
-                        android:gravity="center"
-                        android:onClick="buttonARView"
-                        android:textColor="@color/btn_text_color" />
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:columnCount="1"
+                        android:layout_gravity="center"
+                        >
+                        <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:background="@drawable/sofa_1"
+                                />
+                            <Button
+                                android:id="@+id/sofa1_button"
+                                android:text="VIEW"
+                                android:textSize="12dp"
+                                android:textColor="@color/btn_text_color"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:gravity="center"
+                                android:background="@drawable/border_big_button"
+                                android:onClick="sofa1_buttonARView"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:background="@drawable/sofa_2"
+                                />
+                            <Button
+                                android:id="@+id/sofa2_button"
+                                android:text="VIEW"
+                                android:textSize="12dp"
+                                android:textColor="@color/btn_text_color"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:gravity="center"
+                                android:background="@drawable/border_big_button"
+                                android:onClick="sofa2_buttonARView"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:background="@drawable/sofa_3"
+                                />
+                            <Button
+                                android:id="@+id/sofa3_button"
+                                android:text="VIEW"
+                                android:textSize="12dp"
+                                android:textColor="@color/btn_text_color"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:gravity="center"
+                                android:background="@drawable/border_big_button"
+                                android:onClick="sofa3_buttonARView"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:background="@drawable/sofa_4"
+                                />
+                            <Button
+                                android:id="@+id/sofa4_button"
+                                android:text="VIEW"
+                                android:textSize="12dp"
+                                android:textColor="@color/btn_text_color"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:gravity="center"
+                                android:background="@drawable/border_big_button"
+                                android:onClick="sofa4_buttonARView"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:background="@drawable/sofa_5"
+                                />
+                            <Button
+                                android:id="@+id/sofa5_button"
+                                android:text="VIEW"
+                                android:textSize="12dp"
+                                android:textColor="@color/btn_text_color"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:gravity="center"
+                                android:background="@drawable/border_big_button"
+                                android:onClick="sofa5_buttonARView"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:background="@drawable/sofa_6"
+                                />
+                            <Button
+                                android:id="@+id/sofa6_button"
+                                android:text="VIEW"
+                                android:textSize="12dp"
+                                android:textColor="@color/btn_text_color"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:gravity="center"
+                                android:background="@drawable/border_big_button"
+                                android:onClick="sofa6_buttonARView"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:background="@drawable/sofa_7"
+                                />
+                            <Button
+                                android:id="@+id/sofa7_button"
+                                android:text="VIEW"
+                                android:textSize="12dp"
+                                android:textColor="@color/btn_text_color"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:gravity="center"
+                                android:background="@drawable/border_big_button"
+                                android:onClick="sofa7_buttonARView"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:background="@drawable/sofa_8"
+                                />
+                            <Button
+                                android:id="@+id/sofa8_button"
+                                android:text="VIEW"
+                                android:textSize="12dp"
+                                android:textColor="@color/btn_text_color"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:gravity="center"
+                                android:background="@drawable/border_big_button"
+                                android:onClick="sofa8_buttonARView"
+                                />
+                        </LinearLayout>
 
 
-
-
-
-
-
-
-
-
-
-
-                </GridLayout>
+                    </GridLayout>
+                </LinearLayout>
             </ScrollView>
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
