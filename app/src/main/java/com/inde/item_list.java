@@ -15,9 +15,10 @@ import androidx.core.view.WindowInsetsCompat;
 public class item_list extends AppCompatActivity {
     public Button bed_button;
     public Button sofa_button;
-    public Button kitchen_button;
-    public Button dining_button;
+    public Button chair_button;
     public Button led_tv_button;
+    public Button lamp_button;
+    public Button testing_button;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -33,7 +34,6 @@ public class item_list extends AppCompatActivity {
 
 
 //        SOFA BUTTON
-
         sofa_button = findViewById(R.id.sofa_button);
         sofa_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,15 +43,56 @@ public class item_list extends AppCompatActivity {
                 }
             });
 
-
+//        LED TV BUTTON
         led_tv_button = findViewById(R.id.led_tv_button);
         led_tv_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(item_list.this, LED_TV_AR_view.class);
+                Intent intent = new Intent(item_list.this, tv_select.class);
                 startActivity(intent);
                 }
             });
+
+//        CHAIR BUTTON
+        chair_button = findViewById(R.id.chair_button);
+        chair_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(item_list.this, chair_select.class);
+                startActivity(intent);
+                }
+            });
+//        LAMP SELECT
+        lamp_button = findViewById(R.id.lamp_button);
+        lamp_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(item_list.this, lamp_select.class);
+                startActivity(intent);
+            }
+        });
+
+//        BED BUTTON
+        bed_button = findViewById(R.id.bed_button);
+        bed_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(item_list.this, bed_select.class);
+                startActivity(intent);
+            }
+        });
+
+//      testing OPTION
+
+        testing_button = findViewById(R.id.testing_button);
+        testing_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(item_list.this, testing_page.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }

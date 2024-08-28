@@ -71,7 +71,7 @@
                         android:background="@drawable/border_big_button"
                         />
                     <Button
-                        android:id="@+id/kitchen_button"
+                        android:id="@+id/lamp_button"
                         android:text="LAMP"
                         android:textSize="12dp"
                         android:textColor="@color/btn_text_color"
@@ -83,7 +83,7 @@
                         android:background="@drawable/border_big_button"
                         />
                     <Button
-                        android:id="@+id/dining_button"
+                        android:id="@+id/chair_button"
                         android:text="CHAIR"
                         android:textSize="12dp"
                         android:textColor="@color/btn_text_color"
@@ -112,6 +112,19 @@
 
                 </GridLayout>
 
+
+                <Button
+                    android:id="@+id/testing_button"
+                    android:text="TESTING BUTTON"
+                    android:textSize="12dp"
+                    android:textColor="@color/btn_text_color"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="25dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/border_big_button"
+
+                    />
             </LinearLayout>
 
 

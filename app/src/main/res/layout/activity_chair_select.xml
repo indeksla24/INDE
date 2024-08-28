@@ -5,14 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".tv_select"
-    android:background="@color/theme">
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="-143dp"
-        tools:layout_editor_absoluteY="0dp"
-        android:orientation="horizontal">
+    tools:context=".chair_select">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="-143dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:orientation="horizontal">
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -36,10 +36,10 @@
                             <ImageView
                                 android:layout_width="200dp"
                                 android:layout_height="150dp"
-                                android:background="@drawable/tv1"
+                                android:background="@drawable/chair_1"
                                 />
                             <Button
-                                android:id="@+id/tv1_button"
+                                android:id="@+id/chair1_button"
                                 android:text="VIEW"
                                 android:textSize="12dp"
                                 android:textColor="@color/btn_text_color"
@@ -48,7 +48,7 @@
                                 android:layout_marginStart="25dp"
                                 android:gravity="center"
                                 android:background="@drawable/border_big_button"
-                                android:onClick="tv1_buttonARView"
+                                android:onClick="chair1_buttonARView"
                                 />
                         </LinearLayout>
 
@@ -59,10 +59,10 @@
                             <ImageView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
-                                android:background="@drawable/tv2"
+                                android:background="@drawable/chair_2"
                                 />
                             <Button
-                                android:id="@+id/tv2_button"
+                                android:id="@+id/chair2_button"
                                 android:text="VIEW"
                                 android:textSize="12dp"
                                 android:textColor="@color/btn_text_color"
@@ -71,7 +71,7 @@
                                 android:layout_marginStart="25dp"
                                 android:gravity="center"
                                 android:background="@drawable/border_big_button"
-                                android:onClick="tv2_buttonARView"
+                                android:onClick="chair2_buttonARView"
                                 />
                         </LinearLayout>
 
@@ -82,10 +82,10 @@
                             <ImageView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
-                                android:background="@drawable/tv3"
+                                android:background="@drawable/chair_3"
                                 />
                             <Button
-                                android:id="@+id/tv3_button"
+                                android:id="@+id/chair3_button"
                                 android:text="VIEW"
                                 android:textSize="12dp"
                                 android:textColor="@color/btn_text_color"
@@ -94,7 +94,7 @@
                                 android:layout_marginStart="25dp"
                                 android:gravity="center"
                                 android:background="@drawable/border_big_button"
-                                android:onClick="tv3_buttonARView"
+                                android:onClick="chair3_buttonARView"
                                 />
                         </LinearLayout>
 
@@ -105,10 +105,10 @@
                             <ImageView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
-                                android:background="@drawable/tv4"
+                                android:background="@drawable/chair_4"
                                 />
                             <Button
-                                android:id="@+id/tv4_button"
+                                android:id="@+id/chair4_button"
                                 android:text="VIEW"
                                 android:textSize="12dp"
                                 android:textColor="@color/btn_text_color"
@@ -117,7 +117,7 @@
                                 android:layout_marginStart="25dp"
                                 android:gravity="center"
                                 android:background="@drawable/border_big_button"
-                                android:onClick="tv4_buttonARView"
+                                android:onClick="chair4_buttonARView"
                                 />
                         </LinearLayout>
 
@@ -128,10 +128,10 @@
                             <ImageView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
-                                android:background="@drawable/tv5"
+                                android:background="@drawable/chair_5"
                                 />
                             <Button
-                                android:id="@+id/tv5_button"
+                                android:id="@+id/chair5_button"
                                 android:text="VIEW"
                                 android:textSize="12dp"
                                 android:textColor="@color/btn_text_color"
@@ -140,7 +140,7 @@
                                 android:layout_marginStart="25dp"
                                 android:gravity="center"
                                 android:background="@drawable/border_big_button"
-                                android:onClick="tv5_buttonARView"
+                                android:onClick="chair5_buttonARView"
                                 />
                         </LinearLayout>
 
@@ -151,10 +151,10 @@
                             <ImageView
                                 android:layout_width="200dp"
                                 android:layout_height="200dp"
-                                android:background="@drawable/tv6"
+                                android:background="@drawable/chair_6"
                                 />
                             <Button
-                                android:id="@+id/tv6_button"
+                                android:id="@+id/chair6_button"
                                 android:text="VIEW"
                                 android:textSize="12dp"
                                 android:textColor="@color/btn_text_color"
@@ -163,53 +163,7 @@
                                 android:layout_marginStart="25dp"
                                 android:gravity="center"
                                 android:background="@drawable/border_big_button"
-                                android:onClick="tv6_buttonARView"
-                                />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_height="wrap_content"
-                            android:layout_width="match_parent"
-                            android:gravity="center">
-                            <ImageView
-                                android:layout_width="200dp"
-                                android:layout_height="200dp"
-                                android:background="@drawable/tv7"
-                                />
-                            <Button
-                                android:id="@+id/led7_button"
-                                android:text="VIEW"
-                                android:textSize="12dp"
-                                android:textColor="@color/btn_text_color"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="25dp"
-                                android:gravity="center"
-                                android:background="@drawable/border_big_button"
-                                android:onClick="tv7_buttonARView"
-                                />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_height="wrap_content"
-                            android:layout_width="match_parent"
-                            android:gravity="center">
-                            <ImageView
-                                android:layout_width="200dp"
-                                android:layout_height="200dp"
-                                android:background="@drawable/tv8"
-                                />
-                            <Button
-                                android:id="@+id/tv8_button"
-                                android:text="VIEW"
-                                android:textSize="12dp"
-                                android:textColor="@color/btn_text_color"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="25dp"
-                                android:gravity="center"
-                                android:background="@drawable/border_big_button"
-                                android:onClick="tv8_buttonARView"
+                                android:onClick="chair6_buttonARView"
                                 />
                         </LinearLayout>
 
@@ -217,4 +171,4 @@
                 </LinearLayout>
             </ScrollView>
         </androidx.cardview.widget.CardView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
