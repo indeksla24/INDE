@@ -40,9 +40,6 @@
             android:name=".sofa_select"
             android:exported="false" />
         <activity
-            android:name=".AR_view"
-            android:exported="false" />
-        <activity
             android:name=".Dining_Selection"
             android:exported="false" />
         <activity
