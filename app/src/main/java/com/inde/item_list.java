@@ -83,16 +83,16 @@ public class item_list extends AppCompatActivity {
         });
 
 //      testing OPTION
-
-        testing_button = findViewById(R.id.testing_button);
-        testing_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(item_list.this, testing_page.class);
-                startActivity(intent);
-            }
-        });
-
+//
+//        testing_button = findViewById(R.id.testing_button);
+//        testing_button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(item_list.this, testing_page.class);
+//                startActivity(intent);
+//            }
+//        });
+//
 
     }
 }

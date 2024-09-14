@@ -6,5 +6,15 @@
     <color name="my_primary_btn_color">#FF5722</color>
     <color name="my_secondary_btn_color">#501907</color>
     <color name="btn_text_color">#292A33</color>
+            <!-- NEW COLOR SCHEME -->
+    <color name="blue_dark6">#05161a</color>
+    <color name="blue_dark5">#072e33</color>
+    <color name="blue_dark4">#0c7075</color>
+    <color name="blue_dark3">#0f969c</color>
+    <color name="light_blue">#6da5c0</color>
+    <color name="gray_blue">#294d61</color>
+
+    <color name="ivory">#fffff0</color>
+
 
 </resources>

@@ -33,6 +33,7 @@ public class sofa_select extends AppCompatActivity {
             sceneViewerIntent.setPackage("com.google.android.googlequicksearchbox");
             startActivity(sceneViewerIntent);
         }
+
         public void sofa1_buttonARView(View view) {
             Intent sceneViewerIntent = new Intent(Intent.ACTION_VIEW);
             sceneViewerIntent.setData(Uri.parse("https://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/indeksla24/inde_3d_models/main/SOFA%202.gltf"));
@@ -45,6 +46,7 @@ public class sofa_select extends AppCompatActivity {
             sceneViewerIntent.setPackage("com.google.android.googlequicksearchbox");
             startActivity(sceneViewerIntent);
         }
+
         public void sofa3_buttonARView(View view) {
             Intent sceneViewerIntent = new Intent(Intent.ACTION_VIEW);
             sceneViewerIntent.setData(Uri.parse("https://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/indeksla24/inde_3d_models/main/SOFA%204.gltf"));
@@ -82,7 +84,9 @@ public class sofa_select extends AppCompatActivity {
             startActivity(sceneViewerIntent);
         }
 
+
 }
+
 
 
 

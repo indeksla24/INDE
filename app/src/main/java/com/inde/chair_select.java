@@ -28,7 +28,7 @@ public class chair_select extends AppCompatActivity {
 
     public void chair1_buttonARView(View view) {
         Intent sceneViewerIntent = new Intent(Intent.ACTION_VIEW);
-        sceneViewerIntent.setData(Uri.parse("https://arvr.google.com/scene-viewer/1.0?file=https://github.com/indeksla24/inde_3d_models/blob/main/CHAIR%201.gltf"));
+        sceneViewerIntent.setData(Uri.parse("https://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/indeksla24/inde_3d_models/main/CHAIR%201.gltf"));
         sceneViewerIntent.setPackage("com.google.android.googlequicksearchbox");
         startActivity(sceneViewerIntent);
     }
