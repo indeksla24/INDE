@@ -40,8 +40,8 @@ public class item_list extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(item_list.this, sofa_select.class);
                 startActivity(intent);
-                }
-            });
+            }
+        });
 
 //        LED TV BUTTON
         led_tv_button = findViewById(R.id.led_tv_button);
@@ -50,8 +50,8 @@ public class item_list extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(item_list.this, tv_select.class);
                 startActivity(intent);
-                }
-            });
+            }
+        });
 
 //        CHAIR BUTTON
         chair_button = findViewById(R.id.chair_button);
@@ -60,8 +60,8 @@ public class item_list extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(item_list.this, chair_select.class);
                 startActivity(intent);
-                }
-            });
+            }
+        });
 //        LAMP SELECT
         lamp_button = findViewById(R.id.lamp_button);
         lamp_button.setOnClickListener(new View.OnClickListener() {
@@ -83,16 +83,14 @@ public class item_list extends AppCompatActivity {
         });
 
 //      testing OPTION
-//
-//        testing_button = findViewById(R.id.testing_button);
-//        testing_button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(item_list.this, testing_page.class);
-//                startActivity(intent);
-//            }
-//        });
-//
 
+        testing_button = findViewById(R.id.testing_button);
+        testing_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(item_list.this, REAL_VIEW_3D_ENVIOURNMENT.class);
+                startActivity(intent);
+            }
+        });
     }
 }
