@@ -21,10 +21,6 @@ import android.widget.ImageView;
 public class Register extends AppCompatActivity {
     public Button register_login_button;
     public Button register_button;
-    public ImageButton register_login_with_google;
-    public ImageButton register_login_with_apple;
-    public ImageButton register_male_button;
-    public ImageButton register_female_button;
     public ImageView tick_male;
     public ImageView tick_female;
 
