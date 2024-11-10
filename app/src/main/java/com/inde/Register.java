@@ -13,8 +13,12 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -22,13 +26,12 @@ import com.google.firebase.database.FirebaseDatabase;
 public class Register extends AppCompatActivity {
 
     // Declare UI components
-    private EditText registerEmailEdit, registerPhoneEdit, registerDateEdit, registerPasswordEdit, registerConfirmPasswordEdit;
-    private ImageButton registerMaleButton, registerFemaleButton;
-    private Button registerButton;
-    private TextView registerGender, registerEmailLabel, registerPhoneLabel, registerDobLabel, registerPasswordLabel, registerConfirmPasswordLabel;
+    EditText register_email_edit, register_Phone_edit, register_Date_edit, register_password_edit, register_confirm_password_edit;
+    Button register_button,login_button;
+    ImageButton registerMaleButton, registerFemaleButton,register_login_with_apple,register_login_with_google;
 
     // Firebase reference
-    public FirebaseAuth firebaseAuth;
+    FirebaseAuth firebaseAuth;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference usersRef = database.getReference("users");
 
@@ -38,118 +41,75 @@ public class Register extends AppCompatActivity {
         setContentView(R.layout.activity_register2);
 
         // Initialize UI components
-        registerEmailEdit = findViewById(R.id.register_email_edit);
-        registerPhoneEdit = findViewById(R.id.register_Phone_edit);
-        registerDateEdit = findViewById(R.id.register_Date_edit);
-        registerPasswordEdit = findViewById(R.id.register_password_edit);
-        registerConfirmPasswordEdit = findViewById(R.id.register_confirm_password_edit);
-        registerButton = findViewById(R.id.register_button);
+        register_email_edit = findViewById(R.id.register_email_edit);
+        register_Phone_edit = findViewById(R.id.register_Phone_edit);
+        register_Date_edit = findViewById(R.id.register_Date_edit);
+        register_password_edit = findViewById(R.id.register_password_edit);
+        register_confirm_password_edit = findViewById(R.id.register_confirm_password_edit);
+        register_button = findViewById(R.id.register_button);
 
-        // Gender selection buttons (Optional logic for selecting gender)
-        registerMaleButton = findViewById(R.id.register_male_button);
-        registerFemaleButton = findViewById(R.id.register_female_button);
-
-        // Register button click listener
-        registerButton.setOnClickListener(v -> {
-            // Fetch the entered data
-            String email = registerEmailEdit.getText().toString().trim();
-            String phone = registerPhoneEdit.getText().toString().trim();
-            String dob = registerDateEdit.getText().toString().trim();
-            String password = registerPasswordEdit.getText().toString().trim();
-            String confirmPassword = registerConfirmPasswordEdit.getText().toString().trim();
+        firebaseAuth = FirebaseAuth.getInstance();
 
 
-//  validate already exist
-//
-//            if(firebaseAuth.getCurrentUser() != null){
-//                startActivity (new Intent(getApplicationContext(), MainActivity.class));
-//                finish();
-//            }
-
-            // Validate fields
-            if (TextUtils.isEmpty(email) || TextUtils.isEmpty(phone) || TextUtils.isEmpty(dob) ||
-                    TextUtils.isEmpty(password) || TextUtils.isEmpty(confirmPassword)) {
-                Toast.makeText(Register.this, "All fields must be filled", Toast.LENGTH_SHORT).show();
-                return;
-            }
-
-            if (!isValidEmail(email)) {
-                Toast.makeText(Register.this, "Please enter a valid email", Toast.LENGTH_SHORT).show();
-                return;
-            }
-
-            if (!password.equals(confirmPassword)) {
-                Toast.makeText(Register.this, "Passwords do not match", Toast.LENGTH_SHORT).show();
-                return;
-            }
-
-            // Create User object
-            User newUser = new User(email, phone, dob, password);
-
-            // Store the user in Firebase
-            String userId = usersRef.push().getKey();  // Generate a unique ID for the user
-            if (userId != null) {
-                usersRef.child(userId).setValue(newUser)
-                        .addOnCompleteListener(task -> {
-                            if (task.isSuccessful()) {
-                                Toast.makeText(Register.this, "Registration successful!", Toast.LENGTH_SHORT).show();
-                                // Optionally, you can redirect to another activity, such as the login page
-                            } else {
-                                Toast.makeText(Register.this, "Failed to register. Please try again.", Toast.LENGTH_SHORT).show();
-                            }
-                        });
+        //Login button Redirect
+        login_button = findViewById(R.id.login_button);
+        login_button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Register.this, MainActivity.class);
+                startActivity(intent);
             }
         });
-    }
 
-    private boolean isValidEmail(String email) {
-        return Patterns.EMAIL_ADDRESS.matcher(email).matches();
-    }
+        // Register button click listener
+
+        register_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String email = register_email_edit.getText().toString().trim();
+                String password = register_password_edit.getText().toString().trim();
+                String confirmPassword = register_confirm_password_edit.getText().toString().trim();
+
+                if (TextUtils.isEmpty(email)){
+                    register_email_edit.setError("Email is required");
+                    return;
+                }
+
+                if (TextUtils.isEmpty(password)){
+                    register_password_edit.setError("Password is required");
+                    return;
+                }
+
+                if (TextUtils.isEmpty(confirmPassword)){
+                    register_confirm_password_edit.setError("Confirm Password is required");
+                    return;
+                }
+
+                if (!password.equals(confirmPassword)){
+                    register_confirm_password_edit.setError("Passwords do not match");
+                    return;
+                }
+
+                if (password.length() < 6){
+                    register_password_edit.setError("Password must be at least 6 characters long");
+                    return;
+                }
+
+//  Register user to Firebase
+            firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+                    if(task.isSuccessful()){
+                        Toast.makeText(getApplicationContext(),"User Created",Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(Register.this,MainActivity.class));
+                    }else {
+                        Toast.makeText(Register.this, "Failed to register. Please try again."+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });
+
+            }
+        });
+}
 }
 
-class User {
-    private String email;
-    private String phone;
-    private String dob;
-    private String password;
-
-    // Constructor
-    public User(String email, String phone, String dob, String password) {
-        this.email = email;
-        this.phone = phone;
-        this.dob = dob;
-        this.password = password;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public String getDob() {
-        return dob;
-    }
-
-    public void setDob(String dob) {
-        this.dob = dob;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-}
