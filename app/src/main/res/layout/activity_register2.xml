@@ -247,12 +247,11 @@
                         android:id="@+id/register_login_button"
                         android:layout_width="wrap_content"
                         android:layout_height="50dp"
-                        android:text="Log in"
                         android:layout_marginStart="10dp"
-                        android:textColor="@color/white"
-                        android:textStyle="bold"
                         android:backgroundTint="@color/my_secondary_btn_color"
-                        />
+                        android:text="Log in"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
             </LinearLayout>

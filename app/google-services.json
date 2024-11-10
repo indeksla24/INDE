@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "509150109748",
-    "project_id": "inde-ksla24",
-    "storage_bucket": "inde-ksla24.appspot.com"
+    "project_number": "409661399726",
+    "project_id": "inde-design",
+    "storage_bucket": "inde-design.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:509150109748:android:c3d5e34daf5f8dda0aaa61",
+        "mobilesdk_app_id": "1:409661399726:android:dbdd3c4e1f1e72020ac33f",
         "android_client_info": {
           "package_name": "com.inde"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDPLsH866BA3fzbl0pAiytGosfs_prYH1E"
+          "current_key": "AIzaSyCqL5knFEEs1kGPSCsxS0ad-6CKrlyGgX0"
         }
       ],
       "services": {

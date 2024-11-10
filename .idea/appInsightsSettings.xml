@@ -10,9 +10,9 @@
               <option name="connection">
                 <ConnectionSetting>
                   <option name="appId" value="com.inde" />
-                  <option name="mobileSdkAppId" value="1:509150109748:android:c3d5e34daf5f8dda0aaa61" />
-                  <option name="projectId" value="inde-ksla24" />
-                  <option name="projectNumber" value="509150109748" />
+                  <option name="mobileSdkAppId" value="1:409661399726:android:dbdd3c4e1f1e72020ac33f" />
+                  <option name="projectId" value="inde-design" />
+                  <option name="projectNumber" value="409661399726" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
