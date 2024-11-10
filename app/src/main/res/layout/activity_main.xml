@@ -10,7 +10,6 @@
     android:background="@color/ivory"
     >
 
-
         <androidx.cardview.widget.CardView
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
@@ -132,37 +131,39 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
                     android:gravity="center"
 
-                    android:orientation="vertical">
+                    android:layout_marginBottom="20dp">
 
                     <TextView
                         android:id="@+id/textView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="Or Log In Using Email" />
+                        android:text="Or Log In Using Email"
+                        android:gravity="center" />
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:gravity="center">
 
-                        <ImageView
-                            android:id="@+id/google_login"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_margin="12dp"
-                            android:background="@drawable/google" />
-
-                        <ImageView
-                            android:id="@+id/apple_login"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_margin="12dp"
-                            android:background="@drawable/google" />
-
+                        <ImageButton
+                            android:id="@+id/register_login_with_google"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:scaleType="fitCenter"
+                            android:background="@drawable/google"
+                            android:layout_marginEnd="30dp"
+                            />
+                        <ImageButton
+                            android:id="@+id/register_login_with_apple"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:alpha=".9"
+                            android:scaleType="fitCenter"
+                            android:background="@drawable/apple"/>
                     </LinearLayout>
                 </LinearLayout>
 
